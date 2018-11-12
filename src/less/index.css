@@ -1,0 +1,215 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  width: 7px;
+  min-height: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+}
+@media (min-width: 768px) {
+  body {
+    position: relative;
+  }
+  .nav-bgcover {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .nav-bgcover ul {
+    float: right;
+    padding-right: 10%;
+  }
+}
+body {
+  text-align: center;
+  overflow-x: hidden;
+}
+.nav-bgcover {
+  z-index: 2;
+  background-color: rgba(253, 239, 238, 0);
+  transition: all .8s;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.nav-bgcover img {
+  width: 150px;
+  height: 60px;
+  opacity: 0;
+  transition: all .3s;
+}
+.nav-bgcover ul {
+  clear: none;
+}
+.nav-bgcover ul > li {
+  cursor: pointer;
+  line-height: 60px;
+  margin: 0 15px;
+}
+.nav-bgcover ul > li a {
+  font-size: 17px;
+  line-height: 30px;
+  color: #aab2bd;
+}
+.nav-bgcover ul .nickname {
+  /* 用户信息框样式 */
+}
+.nav-bgcover ul .nickname a {
+  color: #aab2bd;
+}
+.nav-bgcover ul .nickname .userMsg {
+  width: 200px;
+  height: 220px;
+  background-color: #f6f8fb;
+  position: fixed;
+  right: -220px;
+  top: 70px;
+  z-index: 12;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 1px 20px #c3c3c3;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s 0.1s;
+}
+.nav-bgcover ul .nickname .userMsg div:nth-child(1) {
+  color: #2eb6ca;
+  line-height: 40px;
+  margin: 10px auto;
+}
+.nav-bgcover ul .nickname .userMsg div:nth-child(2),
+.nav-bgcover ul .nickname .userMsg div:nth-child(3) {
+  cursor: pointer;
+  width: 80%;
+  height: 38px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  line-height: 38px;
+  margin: 15px auto;
+  border-radius: 19px;
+  background-color: #ff3348;
+}
+.nav-bgcover ul .nickname .userMsg div:nth-child(2):hover,
+.nav-bgcover ul .nickname .userMsg div:nth-child(3):hover {
+  background-color: #ff3333;
+}
+.nav-bgcover ul .nickname .userMsg span {
+  color: #9da8c2;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.nav-bgcover ul .nickname:hover > .userMsg {
+  right: 5%;
+  visibility: visible;
+  opacity: 1;
+}
+.index-img img {
+  width: 100%;
+  background-size: cover;
+}
+.index-title {
+  margin: 70px 0;
+}
+.index-title img:nth-child(1) {
+  transform: rotateZ(180deg);
+}
+.index-title button {
+  padding: 10px 60px;
+  font-size: 23px;
+  margin: 30px 0;
+  border: 1px pink solid;
+  background-color: white;
+  color: pink;
+  outline: none;
+  border-radius: 5px;
+}
+.index-title button:hover {
+  background-color: pink;
+  color: white;
+}
+.photo-wall > div:hover {
+  border: 2px #5bc0de solid;
+  cursor: pointer;
+}
+.photo-wall > div {
+  padding: 15px 15px;
+  border: 2px white solid;
+  border-radius: 5px;
+}
+.photo-wall > div > div {
+  display: inline-block;
+}
+.photo-wall > div > div img {
+  width: 100%;
+  height: 300px;
+}
+.photo-wall > div > div > div {
+  width: 100%;
+  text-align: left;
+  height: 150px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.photo-wall > div > div > div p:nth-child(1) {
+  color: #000000;
+  font-size: 17px;
+  margin-top: 12px;
+}
+.photo-wall > div > div > div p:nth-child(1) span {
+  margin: 0 10px;
+}
+.photo-wall button {
+  padding: 10px 60px;
+  font-size: 23px;
+  margin: 30px 0;
+  border: 1px pink solid;
+  background-color: white;
+  color: pink;
+  outline: none;
+  text-align: right;
+  border-radius: 5px;
+}
+.photo-wall button:hover {
+  background-color: pink;
+  color: white;
+}
+.index-activity div {
+  text-align: left;
+}
+.index-activity div p:nth-child(1) {
+  display: none;
+}
+.index-activity div span {
+  color: #8BC77C;
+}
+.index-activity div button {
+  border-radius: 5%;
+  border: 0;
+  padding: 7px 15px;
+  background-color: pink;
+  color: white;
+}
+.index-activity img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+footer {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+footer .footer h1 {
+  padding: 20px 0;
+}
+footer .footer p {
+  text-align: left;
+}
+footer .footer input {
+  font-size: 30px;
+  height: 45px;
+  margin-bottom: 20px;
+}

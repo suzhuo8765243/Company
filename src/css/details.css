@@ -1,0 +1,201 @@
+@media (min-width: 768px) {
+  body {
+    position: relative;
+  }
+
+  .nav-bgcover ul {
+    float: right;
+    padding-right: 10%;
+  }
+}
+
+.nav-bgcover {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  min-width: 768px;
+  overflow-x: hidden;
+}
+
+.nav-bgcover {
+  z-index: 2;
+  background-color: rgba(253, 239, 238, 0);
+  transition: all 0.8s;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+
+.nav-bgcover img {
+  width: 150px;
+  height: 60px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.nav-bgcover ul>li {
+  line-height: 60px;
+  margin: 0 15px;
+}
+
+.nav-bgcover ul>li a {
+  font-size: 17px;
+  line-height: 30px;
+  color: #aab2bd;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 7px;
+  min-height: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+body {
+  background-color: rgb(246, 247, 247);
+}
+
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.content .img,
+.content .msg {
+  height: 300px;
+}
+
+.content h3 {
+  font-size: 20px;
+  color: #dd506f;
+}
+
+.content .msg span,
+.content .all-msg-sl span {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  color: #333;
+}
+
+.content .all-msg-sl span {
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #333;
+}
+
+.manifesto {
+  margin-bottom: 30px;
+}
+
+.content .manifesto span {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #333;
+}
+
+.content .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .all-msg {
+  height: 250px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(156, 156, 156);
+}
+
+.content .all-msg img {
+  margin: 65px 60px 0;
+}
+
+.content .all-msg h3 {
+  margin: 10px 60px;
+  font-size: 20px;
+  color: #dd506f;
+}
+
+.content .all-msg-sl {
+  margin-top: 50px;
+}
+
+.textarea {
+  padding-left: 0;
+}
+
+#reset {
+  margin-top: 25px;
+}
+
+.leave {
+  border: 1px solid rgb(156, 156, 156);
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.leave-itmes {
+  border-top: 1px solid #ececec
+}
+
+.leave-itmes img {
+  margin: 30px auto;
+  height: 150px;
+}
+
+.leave-itmes .text {
+  margin-top: 30px;
+  height: 120px;
+  font-size: 14px;
+  color: #666;
+}
+
+.leave-itmes .time {
+  text-align: right;
+}
+
+.leave-itmes .nickname,
+.leave-itmes .time {
+  font-size: 12px;
+  color: #999;
+}
+
+
+
+
+
+footer {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 40px;
+}
+
+footer .footer h1 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer p {
+  text-align: left;
+}
+
+footer .footer input {
+  font-size: 30px;
+  height: 45px;
+  margin-bottom: 20px;
+}

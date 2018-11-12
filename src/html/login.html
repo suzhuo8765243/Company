@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../img/min_login.png">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/bin/normalize.css">
+    <link rel="stylesheet" href="../css/bin/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bin/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bin/su_input.css">
+    <script src="../js/bin/jquery.js"></script>
+    <title>登录/注册--佳缘网</title>
+</head>
+
+<body>
+    <div id="main">
+        <img src="../img/bj_right.png">
+        <!-- 登陆/注册 -->
+        <div>
+            <div id="logo">
+                <img src="../img/logo.png" alt="web佳缘" onclick=jumpIndex()>
+            </div>
+            <!-- 登陆 -->
+            <div id="land">
+                <div onclick="jumpRegister()" id="jump" style="margin-top:0;">去注册</div>
+                <input type="text" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1">
+                <div class="landTips">
+                    <span class="landVerification"></span>
+                </div>
+                <input type="password" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon1">
+                <div class="remember-me">
+                    <input type="checkbox" id="Preservation" name="Preservation" class="rember">
+                    <label for="Preservation">记住我</label>
+                </div>
+                <button type="button" class="btn btn-primary btn-sm" onclick=landCheck()>登陆</button>
+                <div class="icon">
+                    <p>第三方账号登陆</p>
+                    <div class="qq"></div>
+                    <div class="weibo"></div>
+                    <div class="weixin"></div>
+                    <div class="baidu"></div>
+                </div>
+            </div>
+
+
+            <!-- 注册 -->
+            <div id="register">
+                <div onclick="jumpLand()" id="jump" style="margin-top:0;">去登陆</div>
+                <div>
+                    <div><label>用户名</label></div>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="username" onblur=VerificationOne()>
+                    <div class="tips"><span class="Verification"></span></div>
+                </div>
+                <div>
+                    <div><label>昵称</label></div>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="nickname" onblur=VerificationTwo()>
+                    <div class="tips"><span class="Verification"></span></div>
+                </div>
+                <div>
+                    <div><label>密码</label></div>
+                    <input type="password" class="form-control" aria-describedby="basic-addon1" name="password" onblur=VerificationThree()>
+                    <div class="tips"><span class="Verification"></span></div>
+                </div>
+                <div class="sex">
+                    <div><label>性别</label></div>
+                    <div>
+                        <label for="man">男</label>
+                        <input name="sex" type="radio" class="sex" checked>
+                    </div>
+                    <div>
+                        <label for="woman">女</label>
+                        <input name="sex" type="radio" class="sex">
+                    </div>
+                </div>
+                <div class="marriage">
+                    <div><label>婚姻状态</label></div>
+                    <div>
+                        <label for="man">未婚</label>
+                        <input name="marriage" class="marriage" type="radio" checked>
+                    </div>
+                    <div>
+                        <label for="woman">离婚</label>
+                        <input name="marriage" class="marriage" type="radio">
+                    </div>
+                    <div>
+                        <label for="woman">丧偶</label>
+                        <input name="marriage" class="marriage" type="radio">
+                    </div>
+                </div>
+
+                <div>
+                    <div><label>年龄</label></div>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1" name="age" onblur=VerificationFour()>
+                    <div class="tips"><span class="Verification"></span></div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="registerCheck()">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/bin/bootstrap.min.js"></script>
+<script src="../js/bin/public.js"></script>
+<script src="../js/login.js"></script>
+</html>

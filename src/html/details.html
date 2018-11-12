@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../img/min_login.png">
+    <link rel="stylesheet" href="../css/bin/normalize.css">
+    <link rel="stylesheet" href="../css/bin/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bin/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bin/su_input.css">
+
+    <link rel="stylesheet" href="../css/details.css">
+
+    <script src="../js/bin/jquery.js"></script>
+    <script src="../js/bin/bootstrap.min.js"></script>
+    <script src="../js/bin/public.js"></script>
+    <title>会员详情--佳缘网</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default nav-bgcover" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="logo" src="../img/logo.png">
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html" >首页</a></li>
+                    <li><a href="../html/search.html">交友</a></li>
+                    <li><a href="../html/activity.html" >活动</a></li>
+                    <li><a href="../html/school.html">学堂</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="content col-sm-10 col-sm-offset-1">
+        <div class="img col-sm-3">
+            <img src="${userPhoto}" alt="">
+        </div>
+        <div class="col-sm-8 col-sm-offset-1 msg">
+            <h3>${NickName}</h3>
+            <span class="col-sm-4">年龄 : ${Age}</span>
+            <span class="col-sm-4">身高 : ${Height}</span>
+            <span class="col-sm-4">婚姻 : ${Marriage}</span>
+            <br>
+            <span class="col-sm-4">体重 : ${Weight}</span>
+            <span class="col-sm-4">学历 : ${SchoolLevel}</span>
+            <span class="col-sm-4">地区 : ${Address}</span>
+            <br>
+            <span class="col-sm-5"><i class="call btn btn-success">向他打个招呼吧</i> </span>
+        </div>
+        <div class="col-sm-8 col-sm-offset-4 manifesto">
+            <h3>寻爱宣言</h3>
+            <span>${Manifesto}</span>
+        </div>
+
+        <div class="col-sm-12 all-msg">
+            <div class="col-sm-3">
+                <img src="../img/01.png" alt=""><br>
+                <h3>全部信息</h3>
+            </div>
+            <div class="col-sm-8 all-msg-sl">
+                <span class="col-sm-4">用户名 : ${UserName}</span>
+                <span class="col-sm-4">性别 : ${Sex}</span>
+                <span class="col-sm-4">邮箱 : ${Email}</span>
+                <br>
+                <span class="col-sm-4">电话 : ${Tel}</span>
+                <span class="col-sm-4">职业 : ${Professional}</span>
+                <span class="col-sm-4">抽烟/喝酒 : ${SmokeDrink}</span>
+                <br>
+                <span class="col-sm-4">微信 : ${Wechat}</span>
+                <span class="col-sm-4">Q Q : ${QQ}</span>
+                <br>
+            </div>
+        </div>
+        <div class="col-sm-12 leave">
+            <!-- 模板 -->
+            <div class="col-sm-12 leave-itmes">
+                <img data-id="${levaeId}" src="${leaveSrc}" class="col-sm-2" alt="">
+                <p class="col-sm-10 text">${leaveText}</p>
+                <span class="col-sm-3 nickname">来着 : ${leaveNickNaem}</span>
+                <span class="col-sm-7 time">留言时间 : ${leaveTime}</span>
+            </div>
+            <!-- 模板 -->
+        </div>
+
+        <div class="col-sm-7 textarea">
+            <textarea class="form-control levae-textarea" placeholder="这这里输入想要和他说的话吧" rows="4"></textarea>
+        </div>
+
+
+
+        <div id="submit" class="col-sm-3 col-lg-offset-1 btn btn-success">点 击 完 成</div>
+        <div id="reset" class="col-sm-3 col-lg-offset-1 btn btn-success">点 击 重 置</div>
+
+    </main>
+
+    <footer>
+        <div class="container footer">
+            <div class="row clearfix">
+                <h1>联系我们</h1>
+                <div class="col-md-2 column">
+                </div>
+                <div class="col-md-5 column">
+                    <p>http://www.jiayuan.com/</p>
+                    <p>佳缘网2018年创建于成都</p>
+                    <p> 1273870056@qq.com</p>
+                    <p>+86 15282543581</p>
+                    <p> Text: +447380 298654</p>
+                </div>
+                <div class="col-md-5 column">
+                    <h4>订阅我们的电子邮件</h4>
+                    <p>Email Address</p>
+                    <input type="text" class="form-control" />
+                    <button type="button" class="btn btn-primary btn-lg btn-block">SIGN ME UP</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<script src="../js/details.js"></script>
+
+</html>

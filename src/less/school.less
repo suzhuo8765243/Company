@@ -1,0 +1,312 @@
+// 宽高布局样式
+.width(){width:100%;}
+.height(@num){height:@num;}
+.noblock(){display:inline-block;}
+.relative(){position:relative;}
+.absolute(){
+    position:absolute;}
+// 图片，背景样式
+.cover(){background-size:cover;}
+.center(){text-align: center;}
+.bgcolor(@str){background-color:@str;}
+// 旋转
+.rotate(){transform: rotateZ(180deg);}
+// 边框样式
+.radius(){
+    border-radius:5%;
+    border:0;
+}
+//--------------------分界线---------------------------
+// 滚动条
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    width: 7px;
+    min-height: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 7px;
+}
+// 响应式
+@media (min-width:768px) {
+    body{
+           .relative;
+    }
+    .nav-bgcover{
+              position:fixed;
+              top:0;
+              left:0;
+            & ul{
+                 float:right;
+                 padding-right:10%;
+            }
+    }
+}
+
+// 移动端代码
+
+body{
+   overflow-x: hidden;
+}
+
+// 导航栏
+#example-navbar-collapse{
+    background-color: white;
+}
+.nav-bgcover{
+    z-index:2;
+    background-color: rgba(253, 239, 238,0);
+    transition: all .8s;
+    .width;
+    border:0;
+    border-radius:0;
+        & img{
+            width:150px;
+            height:60px;
+            }
+         & ul{
+             clear: none;
+             &>li{ cursor: pointer;
+                   line-height: 60px; 
+                   margin:0 15px;
+                   & a{
+                    font-size: 17px;
+                    line-height: 30px;
+                    color: rgb(170, 178, 189)
+                }
+            }
+ 
+        }
+}
+
+html,body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+   background-color: #c0c0c02e;
+}
+.panel-default
+{   margin-top:70px;
+    color: white;
+    padding-left: 60px;
+	min-width: 750px;
+background-image: url(../images/school_top_bg2.jpg);
+p{
+    font-size: 16px;
+   
+}
+}
+
+.wrap {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+   border: 1px solid silver;
+  width: 65%;
+  min-width: 750px;
+  height: auto;
+ background-color: white;
+ padding: 15px;
+ margin: auto;
+ .left{
+     width: 70%;
+     min-width: 470px;
+     height: auto;
+ }
+ .page{
+    margin-top: 30px;
+    text-align: left;
+}
+.page button{
+
+    text-decoration: none;
+     height: 35px;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+    line-height: 35px;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.page button:hover{
+    color: white;
+    background-color: #0099FF;
+}
+
+ #fall-Love{
+     float: left;
+    width: 60%;
+    font-size: 18px;
+     color: #ff4900e0;
+     margin: 20px;
+ }
+  .nav-tabs{
+      
+    width: 100%;
+      display: inline-block;
+  }
+
+  .school-Details{
+    padding-top: 20px;
+    ul{
+        list-style: none;
+     
+li{
+text-align: center;
+margin:0px 40px 40px 40px;
+b{
+    font-size: 30px;
+    color:#ff00a3a3;
+    
+}
+
+      img{
+width: 600px;
+height: 400px;
+
+      }
+      .all-Body{
+         font-size: 16px;
+         line-height: 40px;
+         letter-spacing: 1px;
+        
+      }
+      
+    }
+}
+    #body-Li{
+        text-align: left;
+        
+    }
+  }
+  .hot_tag{
+    width: 25%;
+    min-width: 252px;
+   display: inline-block;
+ 
+  .hot-title{
+  
+    border-bottom: 1px dashed silver;
+    font-size: 18px;
+    font-weight: 600;
+     width: 100%;
+     text-align: center;
+     height: 42px;
+     line-height: 42px;
+      }
+      .recommend{
+          margin: 15px 0;
+          list-style: none;
+          padding-left: 0;
+          li{
+              width: 49%;
+              text-align: center;
+              display: inline-block;
+              .more{cursor: pointer;}
+              .recommend-title{
+                  font-size: 18px;
+                  color: orange;
+              }
+          }
+          
+      }
+      .members-wrap{
+          width: 100%;
+         text-align: center;
+      .members{
+          width: 40%;
+          display: inline-block;
+          list-style: none;
+          padding-left: 0;
+           margin: 0px 5px;
+          li{
+            
+              text-align:center;
+              img{
+                  width: 110px;
+                  height: 135px;
+              }
+              span{
+                  color: slategray;
+              }
+          }
+              
+          }
+      }
+      .lable_search{
+          border-bottom: 2px solid orange;
+          .lable_list{
+              display: flex;
+             flex-flow: row wrap; 
+              list-style: none;
+              padding-left: 0;
+              margin-top: 30px;
+              li{
+                  margin: 7px;
+                  button{
+                      border-radius: 10px;
+                      background-color: white;
+                      border: 1px solid silver;
+                      padding:2px 9px;
+                      color: darkslategray;
+                      outline-style: none;
+                  }
+                    button:hover{
+                        background-color: orange;
+                        color: white;
+                    }
+              }
+          }
+      }
+  }
+}
+.main{
+    margin-top: 10px;
+    width: 100%;
+    display: inline-block;
+.media-object{
+    width: 250px;
+    height: 180px;
+    margin-right: 10px;
+}
+.media{
+    border-top: 1px solid #c0c0c08a;
+     border-bottom: 1px solid #c0c0c08a;
+   padding:  10px;
+     width: 100%;
+    
+     
+    .mbstract{
+        height: 135px;
+        font-size: 12px;
+        color: darkslategrey;
+       
+    }
+   .release{
+      color: slategray;
+      display: inline-block;
+     span{
+         margin-right: 10px;
+     }
+    
+     }
+   .evaluation{
+        .release;
+        margin-left: 105px;
+        .fa{
+            margin:0 10px;
+            cursor: pointer;
+            
+        }
+        span{
+            color: slategray; 
+        }
+   }
+}
+.media:hover{
+    background-color: #c0c0c02e;
+}
+}
+

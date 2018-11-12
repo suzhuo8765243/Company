@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../img/min_login.png">
+    <link rel="stylesheet" href="../css/bin/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bin/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bin/su_input.css">
+    <link rel="stylesheet" href="../css/message.css">
+
+
+    <script src="../js/bin/jquery.js"></script>
+    <script src="../js/bin/bootstrap.min.js"></script>
+    <script src="../js/bin/public.js"></script>
+
+    <title>修改/完善信息--佳缘网</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default nav-bgcover" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="logo" src="../img/logo.png">
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../html/search.html">交友</a></li>
+                    <li><a href="activity.html">活动</a></li>
+                    <li><a href="school.html">学堂</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h3 class="col-sm-11">完成/修改 资料<span>信息完成度会影响您在该网站的信息展示，同时也可以展示出你的诚意，我们强烈建议您全部完成 ！！</span></h3>
+        <div class="div-form col-sm-6">
+
+            <form method="post" action="http://127.0.0.1:8088/add_msg" class="form-horizontal msg_user">
+                <div class="form-group">
+                    <label for="username" class="col-sm-2 control-label">用户名</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" disabled name="username" id="username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nickname" class="col-sm-2 control-label">昵称</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="nickname" id="nickname" placeholder="昵称">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sex" class="col-sm-2 control-label">性别</label>
+                    <label class="checkbox-inline">
+                        <input type="radio" class="sex" name="sex" id="sex" value="男"> 男
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" class="sex" name="sex" id="sex" value="女"> 女
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="age" class="col-sm-2 control-label">年龄</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" id="age" name="age" placeholder="年龄">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="marriage" class="col-sm-2 control-label">婚姻状况</label>
+                    <label class="checkbox-inline">
+                        <input type="radio" id="marriage" class="marriage" name="marriage" value="未婚"> 未婚
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" id="marriage" class="marriage" name="marriage" value="离婚"> 离婚
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="radio" id="marriage" class="marriage" name="marriage" value="丧偶"> 丧偶
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="tel" class="col-sm-2 control-label">电话</label>
+                    <div class="col-sm-8">
+                        <input type="tel" class="form-control" id="tel" name="tel" placeholder="电话">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">电子邮箱</label>
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="电子邮箱">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="address">所在地区</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" id="address" name="address">
+                            <option value="北京市">北京市</option>
+                            <option value="天津市">天津市</option>
+                            <option value="台湾省">台湾省</option>
+                            <option value="上海市">上海市</option>
+                            <option value="重庆市">重庆市</option>
+                            <option value="河北省">河北省</option>
+                            <option value="山西省">山西省</option>
+                            <option value="辽宁省">辽宁省</option>
+                            <option value="吉林省">吉林省</option>
+                            <option value="黑龙江省">黑龙江省</option>
+                            <option value="江苏省">江苏省</option>
+                            <option value="浙江省">浙江省</option>
+                            <option value="安徽省">安徽省</option>
+                            <option value="福建省">福建省</option>
+                            <option value="江西省">江西省</option>
+                            <option value="山东省">山东省</option>
+                            <option value="河南省">河南省</option>
+                            <option value="湖北省">湖北省</option>
+                            <option value="湖南省">湖南省</option>
+                            <option value="广东省">广东省</option>
+                            <option value="海南省">海南省</option>
+                            <option value="四川省">四川省</option>
+                            <option value="贵州省">贵州省</option>
+                            <option value="云南省">云南省</option>
+                            <option value="陕西省">陕西省</option>
+                            <option value="甘肃省">甘肃省</option>
+                            <option value="青海省">青海省</option>
+                            <option value="内蒙古自治区">内蒙古自治区</option>
+                            <option value="广西壮族自治区">广西壮族自治区</option>
+                            <option value="西藏自治区">西藏自治区</option>
+                            <option value="宁夏回族自治区">宁夏回族自治区</option>
+                            <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                            <option value="香港特别行政区">香港特别行政区</option>
+                            <option value="澳门特别行政区">澳门特别行政区</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <label for="qq" class="col-sm-2 control-label">Q Q号</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" id="qq" name="qq" placeholder="Q Q号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="wechat" class="col-sm-2 control-label">微信</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="wechat" name="wechat" placeholder="微信">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">抽烟喝酒</label>
+                    <div class="checkbox_sd">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="smoke" class="smoke_drink" name="smoke_drink" value="抽烟"> 抽烟
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="drink" class="smoke_drink" name="smoke_drink" value="喝酒"> 喝酒
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="school_Level">教育程度</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" name="school_Level" id="school_Level">
+                            <option value="院士">院士</option>
+                            <option value="博士后">博士后</option>
+                            <option value="博士">博士</option>
+                            <option value="硕士">硕士</option>
+                            <option value="本科">本科</option>
+                            <option value="大专">大专</option>
+                            <option value="高中 / 中专">高中 / 中专</option>
+                            <option value="初中">初中</option>
+                            <option value="小学">小学</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="height" class="col-sm-2 control-label">身高(CM)</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" name="height" id="height" placeholder="身高 单位 CM">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight" class="col-sm-2 control-label">体重(KG)</label>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" id="weight" name="weight" placeholder="体重 单位 KG">
+                    </div>
+                </div>
+
+                <div class="col-lg-offset-1 form-group">
+                    <label for="professional" class="col-sm-2 control-label">职业</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="professional" id="professional" placeholder="职业">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="professional" class="col-sm-2 control-label">寻爱宣言</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" id="manifesto" placeholder="输入你的寻爱宣言" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div id="submit" class="col-lg-9 col-lg-offset-1 btn btn-success">点 击 完 成</div>
+                </div>
+
+        </div>
+        </form>
+
+        <form action="http://127.0.0.1:8088/file_upload" class="file_upload" method="post" enctype="multipart/form-data">
+            <div class="col-sm-5 col-lg-offset-1 file-div">
+                <i class="fa fa-picture-o file-i" aria-hidden="true">
+                    <p>选择图片</p>
+                </i>
+                <img src="" class="file-img" alt="">
+                <input type="file" name="photos" class="file">
+
+                <img src="" class="now-img" alt="">
+                <span class="now-span">当 前 形 像</span>
+
+
+                <span class="file-span">
+                    请选择图片上传：大小180 * 180像素支持JPG、PNG等格式，图片需小于2M
+                </span>
+            </div>
+
+            <div class="col-sm-5 col-lg-offset-1">
+                <img src="../img/001.jpg" style="width: 100%;" alt="">
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="container footer">
+            <div class="row clearfix">
+                <h1>联系我们</h1>
+                <div class="col-md-2 column">
+                </div>
+                <div class="col-md-5 column">
+                    <p>http://www.jiayuan.com/</p>
+                    <p>佳缘网2018年创建于成都</p>
+                    <p> 1273870056@qq.com</p>
+                    <p>+86 15282543581</p>
+                    <p> Text: +447380 298654</p>
+                </div>
+                <div class="col-md-5 column">
+                    <h4>订阅我们的电子邮件</h4>
+                    <p>Email Address</p>
+                    <input type="text" class="form-control" />
+                    <button type="button" class="btn btn-primary btn-lg btn-block">SIGN ME UP</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="../js/message.js"></script>
+
+</html>

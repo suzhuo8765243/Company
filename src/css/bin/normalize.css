@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软宋体";
+    font-size: 15px;
+}
+ul,
+li {
+    list-style: none;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+[clear]::before,
+[clear]::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+    display: block;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+audio,
+video {
+    display: inline-block;
+}
+img {
+    border-style: none;
+}
+button {
+    border: none;
+}
+[hidden] {
+    display: none;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/min_login.png">
+    <title>佳缘网</title>
+    <link rel="stylesheet" href="./css/bin/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bin/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bin/su_input.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./js/bin/jquery.js"></script>
+    <script src="./js/bin/bootstrap.min.js"></script>
+    <script src="./js/bin/public.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-default nav-bgcover" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="logo" src="img/logo.png">
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a style="color:#409EFF;" href="#">首页</a></li>
+                        <li><a class="making-but" href="#">交友</a></li>
+                        <li><a class="activity-but" href="#">活动</a></li>
+                        <li><a class="school-but" href="#">学堂</a></li>
+                        <li class="login"><button type="button" class="btn btn-info">注册/登录</button></li>
+                        <li class="nickname">
+                            <a></a>
+                            <!-- 用户信息框 -->
+                            <div class="userMsg">
+                                <div>userName</div>
+                                <div>设置您的信息</div>
+                                <div>退出登录状态</div>
+                                <span>注： 退出登录将清空登录状态</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+        <!-- 图片 -->
+        <div class="row clearfix index-img">
+            <div class="col-md-12 column">
+                <img src="img/nav.jpg" />
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">系统提示</h4>
+                </div>
+                <div class="modal-body">你还未登录，请先登录</div>
+                <div class="modal-footer">
+                    <button type="button" class="login-btn btn btn-primary">现在就去</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+     <!-- 这是提醒用户完善信息 -->
+     <div class="modal fade" id="complete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">系统提示</h4>
+                </div>
+                <div class="modal-body">系统检测到您的信息没有完善，系统不会显示您的相关信息（但会记录）,完善后则可以显示（至少完成头像，身高，地区）</div>
+                <div class="modal-footer">
+                    <button type="button" class="complete-btn btn btn-primary">现在就去</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 照片墙标题 -->
+    <div class="container">
+        <div class="row clearfix index-title">
+            <div class="col-md-12 column">
+                <img src="img/photo_title.png" />
+                <h1>众里寻她千百度</h1>
+                <p>只是因为在人群中多看了你一眼,再也没能忘掉你容颜,梦想着偶然能有一天再相见…</p>
+                <img src="img/photo_title.png" /><br />
+                <button class="more">更多内容</button>
+            </div>
+        </div>
+        <!-- 照片墙 -->
+        <div class="row clearfix photo-wall">
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix photo-wall">
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-md-3 column">
+                <div class="user-itmes">
+                    <img src="" />
+                    <div></div>
+                </div>
+            </div>
+            <button class="change">换一批</button>
+        </div>
+
+
+        <!-- 线下活动标题 -->
+        <div class="row clearfix index-title">
+            <div class="col-md-12 column">
+                <img src="img/photo_title.png" />
+                <h1>线下活动</h1>
+                <p>不要着急，最好的总是在不经意间出现</p>
+                <img src="img/photo_title.png" />
+            </div>
+        </div>
+
+        <!-- 线下活动内容 -->
+        <div class="row clearfix index-activity">
+        </div>
+
+        <!-- 网上服务标题 -->
+        <div class="row clearfix index-title">
+            <div class="col-md-12 column">
+                <img src="img/photo_title.png" />
+                <h1>千里姻缘一线牵</h1>
+                <p>红豆生南国，春来发几枝？愿君多采撷，此物最相思。</p>
+                <img src="img/photo_title.png" />
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-3 column">
+                <img src="img/wsfw1.png" class="img-rounded" />
+                <p>婚介领导品牌</p>
+            </div>
+            <div class="col-md-3 column">
+                <img src="img/wsfw2.png" class="img-rounded" />
+                <p>专业爱情顾问团队</p>
+            </div>
+            <div class="col-md-3 column">
+                <img src="img/wsfw3.png" class="img-rounded" />
+                <p>高成功率情感专家</p>
+            </div>
+            <div class="col-md-3 column">
+                <img src="img/wsfw4.png" class="img-rounded" />
+                <p>高诚信度婚恋专家</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container footer">
+            <div class="row clearfix">
+                <h1>联系我们</h1>
+                <div class="col-md-2 column">
+                </div>
+                <div class="col-md-5 column">
+                    <p>http://www.jiayuan.com/</p>
+                    <p>佳缘网2018年创建于成都</p>
+                    <p> 1273870056@qq.com</p>
+                    <p>+86 15282543581</p>
+                    <p> Text: +447380 298654</p>
+                </div>
+                <div class="col-md-5 column">
+                    <h4>订阅我们的电子邮件</h4>
+                    <p>Email Address</p>
+                    <input type="text" class="form-control" />
+                    <button type="button" class="btn btn-primary btn-lg btn-block">SIGN ME UP</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</html>
